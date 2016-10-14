@@ -14,17 +14,20 @@
 //                answer = "Nay ;(";
 //        }
 //}
+   
 
 
-
-    $( document ).ready(function() {
+    $(document).ready(function() {
         var date = new Date();
-        var answer;
-        if (date.getDate() === 5){
+        var d = date.getDay();
+        var answer; 
+        if (d === 5){
+                
                 answer = "Yay :^)";
                 document.getElementById("day").innerHTML = answer;
         }else{
                 answer = "Nay :(";
-                document.getElementById("day").innerHTML = answer;
+                document.getElementById("day").innerHTML = answer + " it's" + date.get;
         }
 });  
+
